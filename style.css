@@ -1,0 +1,60 @@
+*{
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Poppins-ExtraLight;
+    src: url(./Poppins-ExtraLight.ttf);
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: Poppins-ExtraLight;
+    font-weight: bold;
+    background-color: rgba(150, 239, 245, 0.37);
+}
+table,td,tr{
+    border:1px solid black;
+    
+}
+th{
+    background-color: bisque;
+}
+#Firstname{
+    width: 25%;
+    height: 25px;
+    border-radius: 20px;
+}
+#Lastname{
+    width: 25%;
+    height: 25px;
+    border-radius: 20px;
+}
+#address{
+    width: 30%;
+    height: 30px;
+    border-radius: 20px;
+}
+#pincode{
+    width: 25%;
+    height: 25px;
+    border-radius: 20px;
+}
+#country{
+    width: 25%;
+    height: 25px;
+    border-radius: 20px;
+}
+#State{
+    width: 25%;
+    height: 25px;
+    border-radius: 20px;
+}
+button{
+    width: 80px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

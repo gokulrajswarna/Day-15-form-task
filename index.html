@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+        <div>
+           
+                <h1 id="title" style="text-align: center;">Food Registration</h1>
+        <p id="description"> Register your favorite food </p>
+        <form id="form" >
+            <div class="form-group">
+            <label  for="Firstname" style="background-color: rgba(123, 255, 15, 0.774) ; border-radius: 10px;" >First Name*</label><br>
+            <input type="text" id="first-name" placeholder="Enter the first name"  onkeyup="handleinput(this)" required></input><br>
+                <label for="Lastname" style="background-color: lightgoldenrodyellow ; border-radius: 5px;">Last Name*</label><br>
+                <input type="text" placeholder="Enter the Last name" id="last-name" onkeyup="handleinput(this)" required><br> 
+                <label for="Address" style="background-color: lightgoldenrodyellow ; border-radius: 5px;" required>Address*</label><br>
+                <textarea type="text" placeholder="Enter your address" id="address" onkeyup="handleinput(this)" ></textarea><br>
+                <label for="Pincode" style="background-color: lightgoldenrodyellow ; border-radius: 5px;" >Pincode*</label><br>
+                <input type="text" placeholder="000000" id="pincode" onkeyup="handleinput(this)" required><br>
+                <div>
+                <label style="background-color: lightgoldenrodyellow ; border-radius: 5px;">Gender*</label><br>
+                <input type="radio" id="male" name="gender" onchange="handleinput(this)">Male
+                <input type="radio" id="Female" name="gender" onchange="handleinput(this)">Female
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label style="background-color: lightgoldenrodyellow ; border-radius: 5px;">Choice of food*</label><br>
+                    <input type="checkbox" id="pizza" name="food"    onchange="handleinput(this)">Pizza
+                    <input type="checkbox" id="Burger" name="food" onchange="handleinput(this)">Burger
+                    <input type="checkbox" id="Briyani" name="food" onchange="handleinput(this)">Briyani
+                    <input type="checkbox" id="Grillchicken" name="food" onchange="handleinput(this)">Grillchicken
+                    <input type="checkbox" id="Fried Rice" name="food" onchange="handleinput(this)">Fried Rice
+                </div>
+                <diV style="margin-bottom: 20px;">
+                    <label style="background-color: lightgoldenrodyellow ; border-radius: 5px;">Country*</label><br>
+                <select style="margin-bottom: 20px;" id="country" onclick="handleinput(this)" >
+                    <option value="">select</option>
+                    <option value="India" >India</option>
+                  </select><br>
+                <label style="background-color: lightgoldenrodyellow ; border-radius: 5px;">State*</label><br>
+                <select  id="State" onclick="handleinput(this)">
+                    <option>Select</option>
+                    <option>Andhra pradesh</option>
+                    <option>Arunachala pradesh</option>
+                    <option>Assam</option>
+                    <option>Bihar</option>
+                    <option>Chatisgarh</option>
+                    <option>Chandigarh</option>
+                    <option>Delhi</option>
+                    <option>Goa</option>
+                    <option>Gujarat</option>
+                    <option>Haryana</option>
+                    <option>Himachal pradesh</option>
+                    <option>Jammu and kashmir</option>
+                    <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Kerala</option>
+                    <option>Madhya pradesh</option>
+                    <option>Maharastra</option>
+                    <option>Manipur</option>
+                    <option>Meghalaya</option>
+                    <option>Mizoram</option>
+                    <option>Nagaland</option>
+                    <option>Odisha</option>
+                    <option>Punjab</option>
+                    <option>Rajasthan</option>
+                    <option>Sikkim</option>
+                    <option>Tamilnadu</option>
+                    <option>Telangana</option>
+                    <option>Tripura</option>
+                    <option>Pondicherry</option>
+                    <option>Uttarkkand</option>
+                    <option>Uttar pradesh</option>  
+                    <option>Andaman island</option>
+                    <option>Dadra and nagar haweli</option>
+                    <option>Lakshadweep</option>
+                    <option>Daman and diu</option>
+                </select><br>
+                </div>
+            </div>
+            <div style="display: none;">
+                <button  class="btn btn-primary" type="submit" id="submit"></button>
+            </div>
+               </form>         
+               <div style="width: 40%; display: flex; justify-content: center; margin-bottom: 20px;">
+                <button class="btn btn-primary" type="submit" id="submit"  onclick="inputsubmit(this)">Submit</button>
+            </div>
+            
+            
+            </div> 
+        
+        
+            <script src="script.js"></script>
+    </body>
+</html>
